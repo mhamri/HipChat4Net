@@ -43,7 +43,7 @@ namespace HipChat4Net
           _client = new HipchatClient(this.AuthToken);
         }
 
-        _client.SendNotification(this.RoomName, loggingEvent.RenderedMessage, _backgroundColor, this.Notify);
+        _client.SendNotification(this.RoomName, RenderLoggingEvent(loggingEvent), _backgroundColor, this.Notify);
       }
 
 
